@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19142.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19129"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Wb-RT-TeQ">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Xwm-4g-RGJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="4032" height="3024"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Xwm-4g-RGJ" firstAttribute="leading" secondItem="K2Z-d3-LgE" secondAttribute="leading" id="7LY-ga-snd"/>
+                                    <constraint firstItem="Xwm-4g-RGJ" firstAttribute="bottom" secondItem="K2Z-d3-LgE" secondAttribute="bottom" id="F6O-zE-zVJ"/>
+                                    <constraint firstItem="Xwm-4g-RGJ" firstAttribute="top" secondItem="K2Z-d3-LgE" secondAttribute="top" id="Gus-yv-iNt"/>
+                                    <constraint firstItem="Xwm-4g-RGJ" firstAttribute="trailing" secondItem="K2Z-d3-LgE" secondAttribute="trailing" id="hTS-dW-lyW"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="K2Z-d3-LgE"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="7HQ-n8-gEI"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Wb-RT-TeQ" secondAttribute="trailing" id="I1n-Ly-aPU"/>
+                            <constraint firstItem="8Wb-RT-TeQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T5E-8d-YV9"/>
+                            <constraint firstItem="8Wb-RT-TeQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aev-aR-ebM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Wb-RT-TeQ" secondAttribute="bottom" id="glO-nc-bu2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Xwm-4g-RGJ" id="zO8-pU-E1f"/>
+                        <outlet property="scrollView" destination="8Wb-RT-TeQ" id="NVt-nI-Z8F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="4032" height="3024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
